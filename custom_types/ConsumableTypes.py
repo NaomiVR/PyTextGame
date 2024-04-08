@@ -3,4 +3,6 @@ from enum import Enum
 
 
 class ConsumableType(Enum):
-    pass
+    RESTORE = 'Restoration Potions'
+    BUFF = 'Buff Potions'
+    DEBUFF = 'Debuff Potions'
