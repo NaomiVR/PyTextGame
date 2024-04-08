@@ -3,8 +3,8 @@ from ..ItemBase import ItemBase
 
 
 class WeaponBase(ItemBase):
-    def __init__(self, damage, name, description, amount, price, weight, _type):
-        super().__init__(name, description, amount, price, weight, _type)
+    def __init__(self, name, description, amount, price, weight, damage, item_type, _type):
+        super().__init__(name, description, amount, price, weight, item_type, _type)
         self._damage = damage
 
     @property

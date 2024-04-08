@@ -9,9 +9,11 @@ class ItemBase:
     _amount: int
     _price: float
     _weight: float
-    _type: ItemTypes
+    _item_type: ItemTypes
+    _type: Any
 
-    def __init__(self, name: str, description: str, amount: int, price: float, weight: float, _type: Any) -> None: ...
+    def __init__(self, name: str, description: str, amount: int, price: float,
+                 weight: float, item_type: ItemTypes, _type: Any) -> None: ...
     @property
     def amount(self) -> int: ...
     @amount.setter

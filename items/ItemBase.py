@@ -1,11 +1,12 @@
 # items/ItemBase.py
 class ItemBase:
-    def __init__(self, name, description, amount, price, weight, _type):
+    def __init__(self, name, description, amount, price, weight, item_type, _type):
         self._name = name
         self._description = description
         self._amount = amount
         self._price = price
         self._weight = weight
+        self._item_type = item_type
         self._type = _type
 
     @property
