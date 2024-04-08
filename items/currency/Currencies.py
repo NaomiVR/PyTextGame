@@ -1,13 +1,12 @@
 # items/currency/Currencies.py
 from ._CurrencyBase import CurrencyBase
-from ...custom_types import CurrencyTypes
+from ...custom_types import ItemTypes, CurrencyTypes
 
 
 class Platinum(CurrencyBase):
-    def __init__(self, name, description, amount):
-        super().__init__(name, description, amount, 0, 0, CurrencyTypes.PLATINUM)
-        self.name = "Platinum"
-        self.description = "A coin made out of a rare material with a large value"
+    def __init__(self, amount):
+        super().__init__("Platinum", "A coin made out of a rare material with a large value", amount,
+                         0, 0, ItemTypes.CURRENCY, CurrencyTypes.PLATINUM)
 
     def to_gold(self):
         return self.amount * 10
@@ -20,10 +19,9 @@ class Platinum(CurrencyBase):
 
 
 class Gold(CurrencyBase):
-    def __init__(self, name, description, amount):
-        super().__init__(name, description, amount, 0, 0, CurrencyTypes.GOLD)
-        self.name = "Gold"
-        self.description = "A coin made out of a rare material with a decent value"
+    def __init__(self, amount):
+        super().__init__("Gold", "A coin made out of a rare material with a decent value", amount,
+                         0, 0, ItemTypes.CURRENCY, CurrencyTypes.GOLD)
 
     def to_platinum(self):
         return self.amount / 10
@@ -36,10 +34,9 @@ class Gold(CurrencyBase):
 
 
 class Silver(CurrencyBase):
-    def __init__(self, name, description, amount):
-        super().__init__(name, description, amount, 0, 0, CurrencyTypes.SILVER)
-        self.name = "Silver"
-        self.description = "A coin made out of a rare material with an average value"
+    def __init__(self, amount):
+        super().__init__("Silver", "A coin made out of a rare material with an average value", amount,
+                         0, 0, ItemTypes.CURRENCY, CurrencyTypes.SILVER)
 
     def to_platinum(self):
         return self.to_gold() / 10
@@ -52,10 +49,9 @@ class Silver(CurrencyBase):
 
 
 class Bronze(CurrencyBase):
-    def __init__(self, name, description, amount):
-        super().__init__(name, description, amount, 0, 0, CurrencyTypes.BRONZE)
-        self.name = "Bronze"
-        self.description = "A coin made out of a rare material with a weak value"
+    def __init__(self, amount):
+        super().__init__("Bronze", "A coin made out of a rare material with a weak value", amount,
+                         0, 0, ItemTypes.CURRENCY, CurrencyTypes.BRONZE)
 
     def to_platinum(self):
         return self.to_gold() / 10
