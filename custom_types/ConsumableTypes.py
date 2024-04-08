@@ -1,4 +1,4 @@
-# _types/ConsumableTypes.py
+# custom_types/ConsumableTypes.py
 from enum import Enum
 
 

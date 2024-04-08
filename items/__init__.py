@@ -1,7 +1,7 @@
 # items/__init__.py
-from . import consumables, currency, weapons
+from . import consumables, currency, weapons, ItemBase
 
-__all__ = ['consumables', 'currency', 'weapons']
+__all__ = ['consumables', 'currency', 'weapons', 'ItemBase']
 __version__ = '0.1.0'
 __author__ = 'Naomi'
 __email__ = 'naomi.vr.0601@gmail.com'

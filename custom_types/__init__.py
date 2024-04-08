@@ -1,4 +1,4 @@
-# _types/__init__.py
+# custom_types/__init__.py
 from . import ConsumableTypes, CurrencyTypes, DamageTypes, ItemTypes, TileTypes
 
 __all__ = ['ConsumableTypes', 'CurrencyTypes', 'DamageTypes', 'ItemTypes', 'TileTypes']

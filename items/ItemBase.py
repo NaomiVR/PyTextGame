@@ -1,4 +1,4 @@
-# items/_ItemBase.py
+# items/ItemBase.py
 class ItemBase:
     def __init__(self, name, description, amount, price, weight, _type):
         self._name = name

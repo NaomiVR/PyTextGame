@@ -1,4 +1,4 @@
-# _types/DamageTypes.py
+# custom_types/DamageTypes.py
 from enum import Enum
 
 

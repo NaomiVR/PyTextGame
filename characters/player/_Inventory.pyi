@@ -1,6 +1,6 @@
 # characters/player/_Inventory.pyi
 from typing import List, Any
-from items._ItemBase import ItemBase
+from ...items import ItemBase
 
 class Inventory:
     _inventory: List[ItemBase]

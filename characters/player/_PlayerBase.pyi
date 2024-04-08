@@ -1,11 +1,11 @@
 # characters/player/_PlayerBase.pyi
-from characters import _CharacterBase
-from . import _Inventory
-from _types import DamageTypes
+from ._Inventory import Inventory
+from .._CharacterBase import CharacterBase
+from ...custom_types import DamageTypes
 
 
 class PlayerBase(CharacterBase):
-    _invetory: _Inventory
+    _invetory: Inventory()
     _weight_limit: float
 
     def __init__(self, name: str, health: int, attack: int, defense: int,

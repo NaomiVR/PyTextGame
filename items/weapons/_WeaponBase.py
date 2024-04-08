@@ -1,8 +1,8 @@
 # items/weapons/_WeaponBase.py
-from items import _ItemBase
+from ..ItemBase import ItemBase
 
 
-class WeaponBase(_ItemBase):
+class WeaponBase(ItemBase):
     def __init__(self, damage, name, description, amount, price, weight, _type):
         super().__init__(name, description, amount, price, weight, _type)
         self._damage = damage

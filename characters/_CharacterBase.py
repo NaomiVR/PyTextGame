@@ -1,5 +1,5 @@
 # characters/_CharacterBase.py
-from _types import DamageTypes
+from ..custom_types import DamageTypes
 
 
 class Character:

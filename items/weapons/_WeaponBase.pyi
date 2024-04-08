@@ -1,6 +1,6 @@
 # items/weapons/_WeaponBase.pyi
-from items import _ItemBase
-from _types import DamageTypes
+from ..ItemBase import ItemBase
+from ...custom_types import DamageTypes
 
 
 class WeaponBase(ItemBase):

@@ -1,4 +1,4 @@
-# items/currency/CurrencyTypes.py
+# custom_types/CurrencyTypes.py
 from enum import Enum
 
 

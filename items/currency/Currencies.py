@@ -1,6 +1,6 @@
 # items/currency/Currencies.py
-from _types import CurrencyTypes
-from . import _CurrencyBase
+from ._CurrencyBase import CurrencyBase
+from ...custom_types import CurrencyTypes
 
 
 class Platinum(CurrencyBase):

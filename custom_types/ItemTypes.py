@@ -1,4 +1,4 @@
-# _types/ItemTypes.py
+# custom_types/ItemTypes.py
 from enum import Enum
 
 

@@ -1,6 +1,6 @@
 # characters/_CharacterBase.pyi
 from typing import Any
-from _types import DamageTypes
+from ..custom_types import DamageTypes
 
 
 class CharacterBase:

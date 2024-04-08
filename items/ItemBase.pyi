@@ -1,6 +1,6 @@
-# items/_ItemBase.pyi
+# items/ItemBase.pyi
 from typing import Any
-from _types import ItemTypes
+from ..custom_types import ItemTypes
 
 
 class ItemBase:

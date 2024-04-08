@@ -1,5 +1,5 @@
 # items/currency/_CurrencyBase.py
-from items import _ItemBase
+from ..ItemBase import ItemBase
 
 
 class CurrencyBase(ItemBase):

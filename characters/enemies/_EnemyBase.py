@@ -1,5 +1,5 @@
 # characters/enemies/_EnemyBase.py
-from characters import _CharacterBase
+from .._CharacterBase import CharacterBase
 
 
 class EnemyBase(CharacterBase):
