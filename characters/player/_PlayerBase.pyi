@@ -5,7 +5,7 @@ from ...custom_types import DamageTypes
 
 
 class PlayerBase(CharacterBase):
-    _invetory: Inventory()
+    inventory: Inventory()
     _weight_limit: float
 
     def __init__(self, name: str, health: int, attack: int, defense: int,
